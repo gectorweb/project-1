@@ -7,12 +7,14 @@ const del = require('del');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const sync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
 
 function html() {
   return src('src/**.html')
     .pipe(include({
       prefix: '@@'
     }))
+    // Эта опция нужна для минификации html файла 
     // .pipe(htmlmin({
     //   collapseWhitespace: true
     // }))
@@ -23,7 +25,7 @@ function scss() {
   return src('src/scss/**.scss')
     .pipe(sass())
     .pipe(autoprefixer({
-      browsers: ['last 2 versions']
+      overrideBrowserslist: ['last 2 versions']
     }))
     .pipe(csso())
     .pipe(concat('style.min.css'))
