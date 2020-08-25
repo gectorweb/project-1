@@ -55,8 +55,8 @@ function serve() {
     server: './dist'
   });
 
-  watch('src/**.html', series(html)).on('change', sync.reload);
-  watch('src/scss/**.scss', series(scss)).on('change', sync.reload);
+  watch('src/**/*.html', series(html)).on('change', sync.reload);
+  watch('src/scss/**/*.scss', series(scss)).on('change', sync.reload);
   watch('src/js/**.js', series(js)).on('change', sync.reload);
 }
 
