@@ -1,15 +1,57 @@
 body{
-  font-family: serif;
+  font-family:'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 400;
+  position: relative;
 }
 
 .wrapper{
   max-width: 100%;
   overflow-x: hidden;
 }
+// container wodth for diferent screen
+@media(min-width:1366px){
+    .container{
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
 
-.container{
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 0 15px;
+
+.logo{
+  &__img{
+    object-fit: cover;
+  }
+}
+
+.title{
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  &--white{
+    color: #FFFFFF;
+  }
+}
+
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mainColor-button{
+  background-color: $mainColor;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button{
+  color: #ffffff;
+  padding: 5px 20px;
+  min-height: 50px;
+  &--red{
+    background-color: $secondColor;
+  }
 }

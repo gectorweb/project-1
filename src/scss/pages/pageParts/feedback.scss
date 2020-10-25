@@ -1,0 +1,51 @@
+.feedback {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 59px 0 70px;
+    color: #ffffff;
+}
+
+.feedback__title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.feedback__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.feedback__form {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+.feedback__row {
+    margin-right: 19px;
+    text-align-last: left;
+}
+.feedback__input-name {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.feedback__input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #93B1D8;
+    outline: transparent;
+    width: 380px;
+    height: 50px;
+    padding: 5px 10px;
+    color: #ffffff;
+}
+.feedback__button {
+    padding: 5px 46px;
+    height: 50px;
+    color: #ffffff;
+}
+.button--red {
+}
+.feedback__politic {
+    font-size: 14px;
+    line-height: 19px;
+}

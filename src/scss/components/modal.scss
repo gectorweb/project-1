@@ -1,0 +1,95 @@
+.modal {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    padding-top: 250px;
+}
+
+.modal.active{
+    display: flex;
+}
+.modal__window {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+.modal__header{ 
+    padding: 15px 45px 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $mainColor;
+    color: #fff;
+}
+#close{
+    font-size: 27px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.modal__title {
+    text-align: center;
+}
+.modal__form {
+    padding: 20px 25px 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.modal__name {
+    border: 1px solid grey;
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
+    outline: $mainColor;
+    color: #000000;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    &::placeholder{
+        color: rgba(0, 0, 0, 0.4);
+    }
+}
+.modal__telephone {
+    border: 1px solid grey;
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
+    outline: $mainColor;
+    color: #000000;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    &::placeholder{
+        color: rgba(0, 0, 0, 0.4);
+    }
+}
+.modal__email {
+    border: 1px solid grey;
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
+    outline: $mainColor;
+    color: #000000;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    &::placeholder{
+        color: rgba(0, 0, 0, 0.4);
+    }
+}
+.modal__submit {
+    height: 50px;
+    border-radius: 5px;
+}

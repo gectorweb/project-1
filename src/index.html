@@ -5,9 +5,14 @@
 <body>
     <div class="wrapper">
         @@include('template/header.html')
-        @@include('template/footer.html')
-        <script src="js/main.js"></script>
+        <main class="main">
+            @@include('template/promo.html', {'bgLink': 'images/main/promo/bg.jpg'})
+            @@include('template/contact.html')  
+            @@include('template/feedback.html')   
+        </main>  
+        @@include('template/footer.html')     
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

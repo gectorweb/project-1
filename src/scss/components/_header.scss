@@ -1,0 +1,89 @@
+.header{
+    &__top{
+        padding: 13px 0;
+        .container{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__logo{
+        max-width: 256px;
+        margin-right: 70px;
+    }
+    &__descr{
+        max-width: 325px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #3B3C3D;
+        margin-right: 33px;
+    }
+    &__button{
+        min-width: 194px;
+        min-height: 50px;
+        margin-right:  44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__contact-info{
+        text-align: right;
+        margin-left: auto;
+    }
+    &__phone-number{
+        font-size: 24px;
+        line-height: 29px;
+        color: #3B3C3D;
+        transition: color 0.4s ease;
+    }
+    &__phone-number:hover{
+      @media(min-width: 760px){
+        color: $mainColor;
+      }
+    }
+    &__timetable{
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__bottom{
+        background-color: #3B3C3D;
+    }
+}
+
+.menu{
+    width: 100%;
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item{
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:not(:last-child){
+            padding-right: 10px;
+        }
+    }
+    &__link{
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transition: all 0.4s ease;
+        &--active{
+            color: #C9853C; 
+        }
+        &:hover{
+            @media(min-width: 720px){
+                color: #C9853C;
+            }
+        }
+    }
+}

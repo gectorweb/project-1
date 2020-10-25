@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    padding: 43px 0;
+    background-color: #4B4A4A;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.footer__copywritting {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.footer__politics-link {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    @media(min-width: 720px){
+        &:hover{
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+        }
+    }
+}
